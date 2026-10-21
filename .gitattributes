@@ -1,0 +1,15 @@
+# Canonical LF text in Git and on all platforms; Windows command scripts use CRLF.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Portable coursework documents/assets are intentionally retained as binary data.
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
