@@ -38,35 +38,23 @@ select this project's `STM32CubeIDE` subfolder, select `Ex1_RFID`, and finish.
 Leave **Copy projects into workspace** unchecked because sources are linked from
 the parent folder. Keep the entire Ex1_RFID folder together.
 
-From PowerShell in this folder:
-
-```powershell
-.\build.ps1
-.\build.ps1 -Configuration Release
-```
-
-Scripts locate the bundled IDE relative to the school workspace. They use a
-separate `.stm32-ex1-workspace` and save logs in `docs/`. Close any IDE opened on
-that same headless workspace before running the script. A normal build does not
-write to the board.
+Select the Debug or Release configuration and use **Project > Build Project**.
+CubeIDE generates build output locally using the tools installed for your OS.
+A normal build does not write to the board. Windows helper scripts are local
+conveniences excluded from Git and are not required for this project.
 
 ## Flash and view card IDs
 
-After connecting the wired board, run:
+After connecting the wired board, create a local **STM32 C/C++ Application /
+ST-LINK** debug configuration for the built `Debug/Ex1_RFID.elf` (or Release ELF)
+and launch it. Resume execution after the debugger stops at main. Alternatively,
+program the ELF using STM32CubeProgrammer, enable verification, then reset/run.
 
-```powershell
-.\flash.ps1
-[System.IO.Ports.SerialPort]::GetPortNames()
-.\monitor.ps1 -Port COM8
-```
-
-Replace COM8 with the actual **STMicroelectronics STLink Virtual COM Port** in
-Device Manager. The Bluetooth COM ports are unrelated. `flash.ps1` explicitly
-programs and verifies the connected target and then resets it. It uses the Debug
-ELF by default; use `-Configuration Release` for the Release build.
-
-Alternatively use Hercules, Serial tab: **115200 baud, 8 data bits, no parity,
-1 stop bit, no handshake**. Only one terminal may open the COM port at a time.
+Open the board's serial port in a terminal at **115200 baud, 8 data bits, no parity,
+1 stop bit, no handshake**. On Windows, find **STMicroelectronics STLink Virtual
+COM Port** in Device Manager (COM8 on this workstation); Bluetooth ports are
+unrelated. On macOS, find the matching `/dev/cu.usbmodem...` device. Hercules is
+one Windows terminal option. Only one terminal may open the COM port at a time.
 Press the black RESET button after opening the terminal to see the startup banner.
 
 Expected output (illustrative UID, not a measured card):
@@ -97,7 +85,7 @@ card in place need not produce a new ID every poll.
 - `Ex1_RFID.ioc`: peripheral/pin configuration matching this setup. It was prepared
   as a configuration snapshot; CubeMX regeneration has not been verified. Back up
   sources before regenerating and review custom driver links and application code.
-- `build.ps1`, `flash.ps1`, `monitor.ps1`: CLI build, explicit programming and terminal.
+- Windows CLI helper scripts stay local and are ignored by Git.
 
 The original driver files one directory above remain unchanged. In the integration
 copy, register transfers query `HAL_SPI_GetState` directly instead of assigning

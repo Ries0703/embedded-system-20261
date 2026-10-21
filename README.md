@@ -12,7 +12,7 @@ Install development tools separately for your operating system.
 | `Lab1_3_2/` | Seven-segment wiring test; full exercise remains incomplete. Read its README and WIRING first. |
 | `IrRemoteControl/` | Instructor/sample IR project extracted from the original ZIP; not claimed as a completed exercise. |
 | `class-20261021/ex1/Ex1_RFID/` | RC522 project; built and demonstrated reading a card over USART1 during the 2026-10-21 session. |
-| `class-20261021/ex2/images/` | Gyroscope assignment slides; implementation/library not included yet. |
+| `class-20261021/ex2/Ex2_Gyro/` | Onboard gyroscope project using the supplied library; angular rates over USART1 and sign-controlled LEDs. |
 | `class-20261021/ex3/images/` | LCD assignment slides; implementation/library not included yet. |
 | `lectures/` | Lecture PDFs and text notes. |
 | `hand-in/`, `report-assets/` | Existing reports, video-link text and report illustrations; generated ZIPs excluded. |
@@ -66,9 +66,9 @@ Windows examples is not a portable device name. Open one terminal at a time and
 press RESET to see the startup banner. The terminal displays output from whatever
 firmware is currently flashed; building a project alone does not change firmware.
 
-The existing Ex1 `.ps1` helpers are optional Windows convenience scripts tied to
-the ignored bundled Windows tools. Mac users should use their own CubeIDE install
-and serial terminal; those scripts are not required for any project to build.
+Windows PowerShell/batch helpers stay local and are ignored by Git. Use your own
+CubeIDE installation and serial terminal on each OS; no Windows helper script is
+required for any project to build or flash.
 
 ## What Git excludes
 

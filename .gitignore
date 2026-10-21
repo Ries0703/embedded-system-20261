@@ -3,6 +3,13 @@
 /STM32CubeMX*/
 /STM32CubeProgrammer*/
 
+# Host-specific Windows automation stays local; use CubeIDE on each OS.
+*.ps1
+*.psm1
+*.psd1
+*.bat
+*.cmd
+
 # Eclipse workspaces, caches and local launch/tool settings.
 /.stm32*-workspace*/
 /.submission-build/
