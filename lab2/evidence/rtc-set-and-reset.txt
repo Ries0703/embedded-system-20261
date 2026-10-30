@@ -1,0 +1,23 @@
+> TIME SET 2026-10-30 13:46:22
+OK TIME SET
+TIME 2026-10-30 13:46:22 weekday=6
+TIME 2026-10-30 13:46:22 weekday=6
+TIME 2026-10-30 13:46:22 weekday=6
+TIME 2026-10-30 13:46:23 weekday=6
+TIME 2026-10-30 13:46:24 weekday=6
+TIME 2026-10-30 13:46:25 weekday=6
+TIME 2026-10-30 13:46:26 weekday=6
+--- MCU reset; no TIME SET after this ---
+
+LAB2 PERIPHERALS / EXERCISE 3.6 RTC / USART1 115200 8N1
+Clock is NOT reset on boot. Type HELP.
+I2C3 scan at 100 kHz (7-bit addresses):
+I2C ACK 0x41
+I2C ACK 0x50
+I2C ACK 0x68
+SCAN END count=3
+TIME 2026-10-30 13:46:27 weekday=6
+TIME 2026-10-30 13:46:28 weekday=6
+TIME 2026-10-30 13:46:29 weekday=6
+TIME 2026-10-30 13:46:30 weekday=6
+TIME 2026-10-30 13:46:31 weekday=6

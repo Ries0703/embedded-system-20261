@@ -1,0 +1,3 @@
+PASS: RTC BCD, calendar, 12h/24h, oscillator, address and transport checks
+PASS: held card, transient misses, card replacement, removal and re-presentation
+PASS: whitelist, duplicate/full/invalid/delete, hex/BCC parser, 101-entry RAM ring and clear

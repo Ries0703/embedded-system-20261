@@ -1,0 +1,10 @@
+Exercise 3.6 verification - 2026-10-30 Asia/Bangkok
+Project: Lab2_Peripherals
+Debug build: 0 errors, 0 warnings (13:27 build).
+Flash: download verified successfully.
+Wired I2C scan: DS1307 0x68 and AT24C32 0x50 acknowledge; also 0x41.
+TIME SET executed once at 13:46:22 local time.
+Live RTC advanced through 13:46:26 before MCU reset.
+After reset, without TIME SET, readings continued 13:46:27 through 13:46:31.
+Battery removed for initial test: full power-loss retention is not demonstrated.
+Video recording and playback confirmation: pending user.

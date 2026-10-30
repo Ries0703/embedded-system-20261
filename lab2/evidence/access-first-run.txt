@@ -1,0 +1,28 @@
+TIME 2026-10-30 14:46:45 weekday=6
+TIME 2026-10-30 14:46:46 weekday=6
+TIME 2026-10-30 14:46:47 weekday=6
+TIME 2026-10-30 14:46:48 weekday=6
+TIME 2026-10-30 14:46:49 weekday=6
+TIME 2026-10-30 14:46:50 weekday=6
+TIME 2026-10-30 14:46:51 weekday=6
+TIME 2026-10-30 14:46:50
+LAB2 ACCESS CONTROL / EXERCISE 3.9 / USART1 115200 8N1
+Clock is NOT reset on boot. Empty allowlist; door locked. Type HELP.
+I2C3 scan at 100 kHz (7-bit addresses):
+I2C ACK 0x3C
+I2C ACK 0x41
+I2C ACK 0x50
+I2C ACK 0x68
+SCAN END count=4
+OLED initialized at 0x3C
+RC522 VersionReg: 0xB2 ready
+HELP | STATUS | SCAN | RFID INIT | CARD LAST
+TIME GET | TIME SET YYYY-MM-DD HH:MM:SS
+ALLOW ADD 10_HEX_DIGITS | ALLOW DEL 10_HEX_DIGITS | ALLOW LIST
+LOG LIST | LOG CLEAR
+End commands with Enter (CR, LF or CRLF). Logs and allowlist are RAM-only.
+STATUS reader=OK rtc=OK present=0 door=LOCKED allowed=0 logs=0/100
+ALLOW BEGIN count=0
+ALLOW END
+LOG BEGIN count=0
+LOG END

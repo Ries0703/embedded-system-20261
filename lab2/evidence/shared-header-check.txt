@@ -1,0 +1,14 @@
+I2C3 scan at 100 kHz (7-bit addresses):
+I2C ACK 0x3C
+I2C ACK 0x41
+I2C ACK 0x50
+I2C ACK 0x68
+SCAN END count=4
+ERR RTC status=1 I2C=0x00000000; check wiring or TIME SET
+ERR RTC status=1 I2C=0x00000000; check wiring or TIME SET
+> TIME SET 2026-10-30 14:30:19
+OK TIME SET
+TIME 2026-10-30 14:30:19 weekday=6
+TIME 2026-10-30 14:30:19 weekday=6
+TIME 2026-10-30 14:30:20 weekday=6
+TIME 2026-10-30 14:30:21 weekday=6

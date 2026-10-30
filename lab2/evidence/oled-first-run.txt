@@ -1,0 +1,24 @@
+> TIME SET 2026-10-30 14:00:15
+
+LAB2 PERIPHERALS / EXERCISE 3.7 OLED CLOCK / USART1 115200 8N1
+Clock is NOT reset on boot. Type HELP.
+I2C3 scan at 100 kHz (7-bit addresses):
+I2C ACK 0x41
+I2C ACK 0x50
+I2C ACK 0x68
+SCAN END count=3
+ERR OLED not detected at 0x3C; check SCAN and wiring
+OK TIME SET
+TIME 2026-10-30 14:00:15 weekday=6
+I2C3 scan at 100 kHz (7-bit addresses):
+I2C ACK 0x41
+I2C ACK 0x50
+I2C ACK 0x68
+SCAN END count=3
+TIME 2026-10-30 14:00:15 weekday=6
+TIME 2026-10-30 14:00:15 weekday=6
+TIME 2026-10-30 14:00:16 weekday=6
+TIME 2026-10-30 14:00:17 weekday=6
+TIME 2026-10-30 14:00:18 weekday=6
+TIME 2026-10-30 14:00:19 weekday=6
+TIME 2026-10-30 14:00:20 weekday=6

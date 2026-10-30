@@ -73,6 +73,17 @@ compile_commands.json
 *.tar.gz
 *.tgz
 
+# Raw recordings and generated video preview frames stay local.
+*.[mM][oO][vV]
+*.[mM][pP]4
+/lab2/recordings/
+/lab2/report-assets/
+
+# Local build paths, console command queue and generated package bookkeeping.
+/lab2/evidence/package-stage.txt
+/lab2/evidence/console-command.txt
+/lab2/evidence/submission-verification.json
+
 # OS/editor temporary files and optional local configuration.
 .DS_Store
 ._*

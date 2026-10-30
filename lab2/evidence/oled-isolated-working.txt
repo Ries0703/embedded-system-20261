@@ -1,0 +1,6 @@
+I2C3 scan at 100 kHz (7-bit addresses):
+I2C ACK 0x3C
+I2C ACK 0x41
+SCAN END count=2
+ERR RTC status=1 I2C=0x00000004; check wiring or TIME SET
+ERR RTC status=1 I2C=0x00000004; check wiring or TIME SET
